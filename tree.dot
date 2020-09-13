@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="black_corner_ul same row as black_corner_ur <= 0.5\ngini = 0.499\nsamples = 2736\nvalue = [1296, 1440]\nclass = snake"] ;
+1 [label="black_corner_ll same row as black_corner_lr <= 0.5\ngini = 0.35\nsamples = 1860\nvalue = [420, 1440]\nclass = snake"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="black_corner_ur 1.0 above black_corner_lr <= 0.5\ngini = 0.222\nsamples = 1650\nvalue = [210, 1440]\nclass = snake"] ;
+1 -> 2 ;
+3 [label="black_corner_ur 2.0 above black_corner_lr <= 0.5\ngini = 0.148\nsamples = 1566\nvalue = [126, 1440]\nclass = snake"] ;
+2 -> 3 ;
+4 [label="black_corner_ul 3.0 above black_corner_ll <= 0.5\ngini = 0.088\nsamples = 1510\nvalue = [70, 1440]\nclass = snake"] ;
+3 -> 4 ;
+5 [label="black_corner_ul 4.0 above black_corner_ll <= 0.5\ngini = 0.046\nsamples = 1475\nvalue = [35, 1440]\nclass = snake"] ;
+4 -> 5 ;
+6 [label="black_corner_ur 5.0 above black_corner_lr <= 0.5\ngini = 0.02\nsamples = 1455\nvalue = [15, 1440]\nclass = snake"] ;
+5 -> 6 ;
+7 [label="gini = 0.007\nsamples = 1445\nvalue = [5, 1440]\nclass = snake"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 10\nvalue = [10, 0]\nclass = box"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 20\nvalue = [20, 0]\nclass = box"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 35\nvalue = [35, 0]\nclass = box"] ;
+4 -> 10 ;
+11 [label="gini = 0.0\nsamples = 56\nvalue = [56, 0]\nclass = box"] ;
+3 -> 11 ;
+12 [label="gini = 0.0\nsamples = 84\nvalue = [84, 0]\nclass = box"] ;
+2 -> 12 ;
+13 [label="gini = 0.0\nsamples = 210\nvalue = [210, 0]\nclass = box"] ;
+1 -> 13 ;
+14 [label="gini = 0.0\nsamples = 876\nvalue = [876, 0]\nclass = box"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
